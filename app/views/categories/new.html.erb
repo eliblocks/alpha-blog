@@ -1,0 +1,6 @@
+<h1 align="center">Create New Category</h1>
+<%= render 'shared/errors', obj: @category %>
+<%= simple_form_for @category do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+<% end %>

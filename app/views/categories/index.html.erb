@@ -1,0 +1,13 @@
+<%= will_paginate %>
+  <% @categories.each do |obj| %>
+    <div class="row" align="center">
+      <div class ="col-xs-8 col-xs-offset-2">
+        <div class="well well-lg">
+          <div class="article-title">
+            <%= link_to obj.name, category_path(obj) %>
+          </div>
+        </div>
+      </div>
+    </div>
+<% end %>
+<%= will_paginate %>
