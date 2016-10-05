@@ -3,5 +3,6 @@
 <%= simple_form_for @article do |f| %>
   <%= f.input :title %>
   <%= f.input :description %>
+  <%= f.association :categories, as: :check_boxes %>
   <%= f.button :submit %>
 <% end %>

@@ -6,6 +6,7 @@
           <div class="article-title">
             <%= link_to obj.name, category_path(obj) %>
           </div>
+          <small><%= pluralize(obj.articles.count, "article") %></small>
         </div>
       </div>
     </div>
